@@ -1,11 +1,11 @@
 $(document).ready(function(){
 
-  $(".header-nav-bottom-central .parent-dropdown > a").mouseenter(function(){
-    $(this).next().addClass("visibile");
+  $(".header-nav-bottom-central .parent-dropdown ").mouseenter(function(){
+    $(this).children(".dropdown").addClass("visibile");
   });
 
-  $(".header-nav-bottom-central .parent-dropdown > a").mouseleave(function(){
-    $(this).next().removeClass("visibile");
+  $(".header-nav-bottom-central .parent-dropdown").mouseleave(function(){
+    $(this).children(".dropdown").removeClass("visibile");
   });
 
 

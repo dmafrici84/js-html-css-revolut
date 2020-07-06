@@ -121,7 +121,7 @@ header ul li a {
 }
 
 .header-nav-bottom-central .investimenti {
-  width: 225px;
+  width: 320px;
 }
 
 .header-nav-bottom-central .contollo {
@@ -136,9 +136,11 @@ header ul li a {
   width: 135px;
 }
 
-.header-nav-bottom-central .investimenti {
-  width: 225px;
+.header-nav-bottom-central .altro span {
+  opacity: .2;
+  font-size: 14px;
 }
+
 .header-nav-bottom-right {
   text-align: right;
 }
