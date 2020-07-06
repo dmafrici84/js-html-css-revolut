@@ -8,5 +8,4 @@ $(document).ready(function(){
     $(this).children(".dropdown").removeClass("visibile");
   });
 
-
 });

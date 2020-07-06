@@ -70,7 +70,7 @@ header ul li a {
 /* Seconda riga Header */
 
 #header-nav-bottom {
-  height: 150px;
+  height: 120px;
   width: 100%;
 }
 
@@ -92,7 +92,7 @@ header ul li a {
 }
 
 .header-nav-bottom-central > ul > li {
-  padding-right: 50px;
+  padding-right: 45px;
 }
 
 .header-nav-bottom-central .parent-dropdown {
@@ -102,14 +102,16 @@ header ul li a {
 .dropdown {
   position: absolute;
   left: -30px;
-  padding: 10px;
+  top: 30px;
+  padding: 0 30px;
+  background-color: #fff;
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.04) 0px 0px 4px 0px, rgba(0, 0, 0, 0.08) 0px 8px 16px 0px;
   display: none;
 }
 
 .header-nav-bottom-central  .dropdown ul li {
-  line-height: 2.5;
+  line-height: 3.5;
 }
 
 .header-nav-bottom-central  .dropdown ul li a {
@@ -117,23 +119,23 @@ header ul li a {
 }
 
 .header-nav-bottom-central .denaro {
-  width: 225px;
+  width: 270px;
 }
 
 .header-nav-bottom-central .investimenti {
-  width: 320px;
+  width: 360px;
 }
 
 .header-nav-bottom-central .contollo {
-  width: 150px;
+  width: 190px;
 }
 
 .header-nav-bottom-central .altro {
-  width: 240px;
+  width: 280px;
 }
 
 .header-nav-bottom-central .plans {
-  width: 135px;
+  width: 180px;
 }
 
 .header-nav-bottom-central .altro span {
@@ -145,7 +147,7 @@ header ul li a {
   text-align: right;
 }
 
-.btnScarica {
+.btn {
   font-family: Roboto, sans-serif;
   padding: 15px;
   background-color: rgb(25, 28, 31);
@@ -162,4 +164,74 @@ header ul li a {
 
 .visibile {
   display: block;
+}
+
+/* blocco main */
+
+#jumbotron {
+  display: flex;
+}
+
+/* blocco jumbotron-left */
+
+.jumbotron-left{
+  width: 50%;
+  padding-top: 150px;
+  padding-right: 9%
+}
+
+.jumbotron-left h1 {
+  font-size: 75px;
+  color: rgb(25, 28, 31);
+}
+
+.jumbotron-left p {
+  color: rgb(25, 28, 31);
+  opacity: .5;
+  line-height: 1.5;
+  font-size: 18px;
+  padding: 30px 0;
+}
+
+.jumbotron-left select {
+  font-family: Roboto, sans-serif;
+  width: 90px;
+  margin-right: 10px;
+  padding: 5px 0;
+  font-size: 16px;
+  border: none;
+  border-bottom: solid 2px #adadad;
+}
+
+.jumbotron-left input {
+  font-family: Roboto, sans-serif;
+  width: 200px;
+  margin-right: 10px;
+  padding: 5px 0;
+  font-size: 16px;
+  border: none;
+  border-bottom: solid 2px #adadad;
+}
+
+.jumbotron-left .btnInizia {
+  font-size: 18px;
+  width: 140px;
+}
+
+.jumbotron-left .form {
+  margin-bottom: 30px;
+}
+
+.jumbotron-left span {
+  margin-right: 18px;
+}
+
+/* blocco jumbotron-right */
+
+.jumbotron-right {
+  width: 50%;
+  padding: 50px 9% 0 1%;
+}
+.jumbotron-right img {
+  width: 100%;
 }
