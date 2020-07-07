@@ -69,11 +69,9 @@ header ul li a {
 /* Seconda riga Header */
 
 #header-nav-bottom {
-  height: 120px;
+  height: 90px;
   width: 100%;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
+  background-color: #fff;
 }
 
 .header-nav-bottom-left, .header-nav-bottom-right {
@@ -166,13 +164,14 @@ header ul li a {
 }
 
 .hamburger-menu {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   display: none;
   width: 100%;
   height: 100%;
   min-height: calc(100vh - 80px);
+  background-color: #fff;
   box-shadow: rgba(25, 28, 31, 0.04) 0px -4px 8px, rgba(25, 28, 31, 0.04) 0px -1px 0px;
 }
 
@@ -199,8 +198,10 @@ header ul li a {
 }
 
 .hamburger-menu-main {
+  height: calc(100vh - 80px - 90px);
   padding: 0 40px;
   overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .hamburger-menu-central ul, .hamburger-menu-bottom ul {
@@ -259,10 +260,22 @@ header ul li a {
   color: rgb(25, 28, 31);
 }
 
+.noScrollbar {
+  overflow: hidden;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-shadow: rgba(25, 28, 31, 0.04) 0px -4px 8px, rgba(25, 28, 31, 0.04) 0px 2px 0px;
+}
+
 /* blocco main */
 
 #jumbotron {
   display: flex;
+  margin-bottom: 150px;
 }
 
 /* blocco jumbotron-left */
@@ -294,6 +307,7 @@ header ul li a {
   font-size: 16px;
   border: none;
   border-bottom: solid 2px #adadad;
+  cursor: pointer;
 }
 
 .jumbotron-left input {
@@ -379,7 +393,7 @@ footer {
 
 }
 
-/* VERSIONE MD - xs*/
+/* VERSIONE MD */
 
 @media all and (max-width: 1023px) {
 
@@ -403,6 +417,10 @@ footer {
 
   .hamburger {
     display: block;
+  }
+  .sticky {
+    position: inherit;
+    box-shadow: none;
   }
 
   /* blocco main */
@@ -431,6 +449,37 @@ footer {
 
   .jumbotron-right {
     width: 50%;
+    padding: 30px 2% 0 2%;
+    margin: 0 auto;
+  }
+
+
+  footer {
+    display: block;
+  }
+
+
+}
+
+/* VERSIONE XS */
+@media all and (max-width: 860px) {
+  .centratura {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  /* blocco jumbotron-left */
+
+  .jumbotron-left {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-right: 0;
+    text-align: center;
+  }
+
+  .jumbotron-right {
+    width: 75%;
     padding: 30px 2% 0 2%;
     margin: 0 auto;
   }
