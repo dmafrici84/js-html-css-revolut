@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-    // Quando l'utente scorre la pagina, esegue la funzione scroola
+    // Quando l'utente scorre la pagina, esegue la funzione scrolla
   window.onscroll = function() {scrolla()};
 
   // al passaggio del cursore sul link della nav si apre il menu corrispondente
@@ -50,8 +50,6 @@ $(document).ready(function(){
       }
 
     });
-
-
 
 });
 
